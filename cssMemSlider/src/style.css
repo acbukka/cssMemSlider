@@ -59,7 +59,7 @@ a {
 /* start */
 
 html {
-  background-image: url(../assets/phone7.jpg);
+  background-image: url(../assets/phone.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -141,7 +141,7 @@ html {
   justify-content: flex-end;
 }
 .slider-nav label + label {
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
 }
 .slider-nav__item-inner {
   cursor: pointer;
@@ -152,17 +152,34 @@ html {
   transition: all .6s;
 }
 .slider-nav__item {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer; 
 }
 .slider-nav__item:hover .slider-nav__item-inner{
-  background-color: aqua;
+  background-color: green;
 }
 
+/* lets realise hovers when hover on the active button */
+#s1:checked ~ .nav-wrapper .slider-nav >*:nth-child(1):hover .slider-nav__item-inner{
+  background-color: green;
+}
+#s2:checked ~ .nav-wrapper .slider-nav >*:nth-child(2):hover .slider-nav__item-inner {
+  background-color: green;
+}
+#s3:checked ~ .nav-wrapper .slider-nav >*:nth-child(3):hover .slider-nav__item-inner {
+  background-color: green;
+}
+#s4:checked ~ .nav-wrapper .slider-nav >*:nth-child(4):hover .slider-nav__item-inner {
+  background-color: green;
+}
+#s5:checked ~ .nav-wrapper .slider-nav >*:nth-child(5):hover .slider-nav__item-inner {
+  background-color: green;
+}
+/* add active button effect */
 #s1:checked ~ .nav-wrapper .slider-nav >*:nth-child(1)  .slider-nav__item-inner {
   background-color: bisque;
 }
@@ -178,7 +195,6 @@ html {
 #s5:checked ~ .nav-wrapper .slider-nav >*:nth-child(5) .slider-nav__item-inner {
   background-color: bisque;
 }
-
 
 
 /* Realise slider animation, moving the first element */
@@ -199,7 +215,7 @@ html {
 }
 
 
-/*  */
+/* Realise spans animation, moving the first element */
 #s1:checked ~ .nav-wrapper .slider-nav__spans .spans-wrapper >*:nth-child(1) {
   margin-left: 0;
 }
@@ -215,7 +231,6 @@ html {
 #s5:checked ~ .nav-wrapper .slider-nav__spans .spans-wrapper >*:nth-child(1) {
   margin-left: -80%;
 }
-
 
 
 /* adaptive */
@@ -237,16 +252,9 @@ html {
 
 @media (max-width: 400px) {
   .slider-nav label + label {
-  margin-left: 0.3rem;
+  margin-left: 0.25rem;
   }
   .slider-nav__spans {
   width: 100%;
   }
 }
-
-
-
-
-
-
-
