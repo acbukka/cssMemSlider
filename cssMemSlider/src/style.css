@@ -264,6 +264,7 @@ html {
     justify-content: center;
   }
   .slider-nav__span {
+    width: 20.1%;
     text-align: left;
   }
   .slider-nav__spans {
