@@ -78,7 +78,7 @@ html {
 }
 
 .slider {
-  border: 3px solid bisque;
+  border: 0.188rem solid bisque;
   border-radius: 0.625rem;
   overflow: hidden;
   max-width: 33rem;
