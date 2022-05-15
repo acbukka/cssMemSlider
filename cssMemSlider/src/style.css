@@ -101,7 +101,7 @@ html {
 /* for spans */
 .slider-nav__spans {
   overflow: hidden;
-  max-width: 20rem;
+  max-width: 19rem;
   height: auto;
 }
 .spans-wrapper {
