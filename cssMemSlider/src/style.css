@@ -162,6 +162,10 @@ html {
 .slider-nav__item:hover .slider-nav__item-inner{
   background-color: green;
 }
+.slider-nav__item:active .slider-nav__item-inner{
+  background-color: white;
+}
+
 
 /* lets realise hovers when hover on the active button */
 #s1:checked ~ .nav-wrapper .slider-nav >*:nth-child(1):hover .slider-nav__item-inner{
@@ -233,28 +237,44 @@ html {
 }
 
 
+/*  */
+#s1:checked ~ .nav-wrapper .slider-nav >*:nth-child(1):active .slider-nav__item-inner{
+  background-color: white;
+}
+#s2:checked ~ .nav-wrapper .slider-nav >*:nth-child(2):active .slider-nav__item-inner {
+  background-color: white;
+}
+#s3:checked ~ .nav-wrapper .slider-nav >*:nth-child(3):active .slider-nav__item-inner {
+  background-color: white;
+}
+#s4:checked ~ .nav-wrapper .slider-nav >*:nth-child(4):active .slider-nav__item-inner {
+  background-color: white;
+}
+#s5:checked ~ .nav-wrapper .slider-nav >*:nth-child(5):active .slider-nav__item-inner {
+  background-color: white;
+}
+/*  */
+
 /* adaptive */
 @media (max-width: 550px) {
   .nav-wrapper {
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+  }
+  .slider-nav__span {
+    text-align: left;
   }
   .slider-nav__spans {
     order: 1;
   }
   .slider-nav {
+    align-self: center;
     justify-content: start;
     margin-bottom: 1.25rem;
   }
-}
-
-@media (max-width: 400px) {
   .slider-nav label + label {
   margin-left: 0.25rem;
-  }
-  .slider-nav__spans {
-  width: 100%;
   }
 }
