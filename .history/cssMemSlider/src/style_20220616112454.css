@@ -75,6 +75,7 @@ html {
   border-radius: 0.625rem;
   overflow: hidden;
   max-width: 33rem;
+  /* height: 33rem; */
   max-height: 33rem;
   margin-bottom: 1.25rem;
 }

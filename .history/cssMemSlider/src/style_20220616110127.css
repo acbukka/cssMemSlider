@@ -112,9 +112,11 @@ html {
 }
 /* img setting */
 .slider-item img{
+  /* max-height:100%; 
+  max-width:100%; */
   width: 100%; 
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 /* hide inputs */
 .slider-items__input {
@@ -250,6 +252,10 @@ html {
 
 /* adaptive */
 @media (max-width: 550px) {
+  /* .slider {
+    width: 100%;
+    height: auto;
+  } */
   .nav-wrapper {
     flex-direction: column;
     width: 100%;
@@ -269,6 +275,6 @@ html {
     margin-bottom: 1.25rem;
   }
   .slider-nav label + label {
-    margin-left: 0.25rem;
+  margin-left: 0.25rem;
   }
 }
